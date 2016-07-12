@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# mongorc
+#
+DEPLOY_USER=root
+DEPLOY_DICTORY=/root
+ACTIVE_TIMEOUT=5
+
+REPLSET="test"
+
+ARBITER=192.168.169.128:28013
+ARBITER_PATH=/data/arbiter
+
+NODES=(
+192.168.169.128:28010
+192.168.169.128:28011
+192.168.169.128:28012
+)
+
+NODE_PATH=/data/mongoslave
+
+KEY=sam
+MONGO_USER=sam
+MONGO_PASSWD=sam
